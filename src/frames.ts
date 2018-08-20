@@ -247,7 +247,7 @@ export const frames: TFrame[] = [
                 scale: .2,
                 type: 'inline',
                 move: {
-                    radius: 20,
+                    radius: 10,
                 },
                 url: deerskull,
                 inline: {
@@ -263,10 +263,6 @@ export const frames: TFrame[] = [
                     onhover: {
                         enable: true,
                         mode: 'bubble'
-                    },
-                    onclick: {
-                        enable: true,
-                        mode: 'repulse'
                     }
                 },
                 modes: {

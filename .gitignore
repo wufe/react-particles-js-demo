@@ -117,3 +117,5 @@ typings/
 package-lock.json
 dist
 yarn.lock
+
+/Makefile
