@@ -11,7 +11,7 @@ export class FrameThumbsContainer extends React.Component<IProps> {
     render() {
         return (
             <div className="frame-thumbs__container">
-                <h1 className="frame-thumbs__title">Presets</h1>
+                <div className="frame-thumbs__title">Presets</div>
                 <FrameContext.Consumer>
                     {({chosenFrame, switchFrame}) =>
                         <React.Fragment>

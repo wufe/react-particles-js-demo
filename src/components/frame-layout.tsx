@@ -81,7 +81,7 @@ export class FrameLayout extends React.Component<IProps, IState> {
                 </div>
                 <div className="frame-layout__container">
                     <div className="frame-layout__content">
-                        <h1 className="frame-layout__name">React Particles JS - {this.props.name} Preset</h1>
+                        <div className="frame-layout__name">React Particles JS - {this.props.name} Preset</div>
                         <div
                             className={`frame-layout__code-container ${this.state.codeVisible ? 'expanded' : 'collapsed'}`}
                             onClick={this.onCodeContainerClick}>
@@ -107,7 +107,7 @@ export class FrameLayout extends React.Component<IProps, IState> {
                         className="github-mark"
                         href="https://github.com/Wufe/react-particles-js"
                         target="_blank"></a>
-                    <span>v2.4.0-beta.2</span>
+                    <span>v2.4.0-beta.4</span>
                 </div>
                 
             </div>

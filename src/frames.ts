@@ -1,5 +1,9 @@
 import { IParticlesParams } from "react-particles-js";
 import react from "../public/assets/react.svg";
+import deer from "../public/assets/deer.svg";
+import deerskull from "../public/assets/deerskull.svg";
+import fox from "../public/assets/fox.svg";
+import wolf from "../public/assets/wolf.svg";
 import k8s from "../public/assets/k8s.svg";
 import code from "../public/assets/code.png";
 
@@ -207,5 +211,72 @@ export const frames: TFrame[] = [
             retina_detect: false
         },
         slug: 'images'
+    },
+    {
+        backgroundColor: 'linear-gradient(45deg, #7d7e7d 0%,#0e0e0e 100%)',
+        name: 'Polygon mask',
+        params: {
+            fps_limit: 28,
+            particles: {
+                number: {
+                    value: 200,
+                    density: {
+                        enable: false
+                    }
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 30,
+                    opacity: .4
+                },
+                move: {
+                    speed: 1
+                },
+                opacity: {
+                    anim: {
+                        enable: true,
+                        opacity_min: .05,
+                        speed: 2,
+                        sync: false,
+                    },
+                    value: .4
+                }
+            },
+            polygon: {
+                enable: true,
+                scale: .2,
+                type: 'inline',
+                move: {
+                    radius: 20,
+                },
+                url: deerskull,
+                inline: {
+                    arrangement: 'equidistant'
+                },
+                draw: {
+                    enable: true
+                }
+            },
+            retina_detect: false,
+            interactivity: {
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: 'bubble'
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: 'repulse'
+                    }
+                },
+                modes: {
+                    bubble: {
+                        size: 6,
+                        distance: 40
+                    }
+                }
+            }
+        },
+        slug: 'mask',
     }
 ];
