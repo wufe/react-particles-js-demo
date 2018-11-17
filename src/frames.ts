@@ -6,6 +6,7 @@ import fox from "../public/assets/fox.svg";
 import wolf from "../public/assets/wolf.svg";
 import k8s from "../public/assets/k8s.svg";
 import code from "../public/assets/code.png";
+import smallDeer from "../public/assets/small-deer.svg";
 
 export type TFrame = {
     backgroundColor: string;
@@ -270,17 +271,20 @@ export const frames: TFrame[] = [
             },
             polygon: {
                 enable: true,
-                scale: .2,
+                scale: .5,
                 type: 'inline',
                 move: {
                     radius: 10,
                 },
-                url: deerskull,
+                url: smallDeer,
                 inline: {
                     arrangement: 'equidistant'
                 },
                 draw: {
-                    enable: true
+                    enable: true,
+                    stroke: {
+                        color: 'rgba(255, 255, 255, .05)'
+                    }
                 }
             },
             retina_detect: false,
