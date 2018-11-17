@@ -116,6 +116,19 @@ export const frames: TFrame[] = [
                 line_linked: {
                     enable: false
                 }
+            },
+            interactivity: {
+                events: {
+                    onclick: {
+                        enable: true,
+                        mode: 'remove'
+                    }
+                },
+                modes: {
+                    remove: {
+                        particles_nb: 10
+                    }
+                }
             }
         },
         slug: 'snow',
@@ -148,6 +161,19 @@ export const frames: TFrame[] = [
                         enable: true,
                         speed: 1,
                         opacity_min: .05
+                    }
+                }
+            },
+            interactivity: {
+                events: {
+                    onclick: {
+                        enable: true,
+                        mode: 'push'
+                    }
+                },
+                modes: {
+                    push: {
+                        particles_nb: 1
                     }
                 }
             },
