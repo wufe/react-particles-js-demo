@@ -183,7 +183,7 @@ export const frames: TFrame[] = [
         slug: 'night-sky',
     },
     {
-        backgroundColor: 'linear-gradient(45deg, #45484d 0%,#000000 100%)',
+        backgroundColor: 'linear-gradient(45deg, #7d7e7d 0%,#0e0e0e 100%)',
         name: 'Multiple images',
         params: {
             particles: {
@@ -240,7 +240,7 @@ export const frames: TFrame[] = [
         slug: 'images'
     },
     {
-        backgroundColor: 'linear-gradient(45deg, #7d7e7d 0%,#0e0e0e 100%)',
+        backgroundColor: 'linear-gradient(45deg, #45484d 0%,#000000 100%)',
         name: 'Polygon mask',
         params: {
             fps_limit: 28,
@@ -283,7 +283,7 @@ export const frames: TFrame[] = [
                 draw: {
                     enable: true,
                     stroke: {
-                        color: 'rgba(255, 255, 255, .05)'
+                        color: 'rgba(255, 255, 255, .2)'
                     }
                 }
             },
