@@ -107,7 +107,7 @@ export class FrameLayout extends React.Component<IProps, IState> {
                         className="github-mark"
                         href="https://github.com/Wufe/react-particles-js"
                         target="_blank"></a>
-                    <span>v2.5.0</span>
+                    <span>v2.5.1</span>
                 </div>
                 
             </div>
