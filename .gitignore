@@ -119,3 +119,4 @@ dist
 yarn.lock
 
 /Makefile
+publish.ps1

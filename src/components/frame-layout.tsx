@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { default as Particles, IParticlesParams } from 'react-particles-js';
-import { default as SyntaxHighlighter } from 'react-syntax-highlighter/prism';
+import SyntaxHighlighter from 'react-syntax-highlighter/prism';
 import { base16AteliersulphurpoolLight as theme } from 'react-syntax-highlighter/styles/prism';
 import { FrameThumbsContainer } from './frame-thumbs-container';
 import { ParticlesContainer } from './particles-container';
@@ -107,7 +107,7 @@ export class FrameLayout extends React.Component<IProps, IState> {
                         className="github-mark"
                         href="https://github.com/Wufe/react-particles-js"
                         target="_blank"></a>
-                    <span>v2.5.1</span>
+                    <span>v2.7.0</span>
                 </div>
                 
             </div>
