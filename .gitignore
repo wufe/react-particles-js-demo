@@ -120,3 +120,4 @@ yarn.lock
 
 /Makefile
 publish.ps1
+.idea/
