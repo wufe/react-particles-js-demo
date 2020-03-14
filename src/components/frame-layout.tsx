@@ -7,7 +7,6 @@ import {Subscription} from 'rxjs';
 import {onKeyPressed} from '../streams/key-pressed';
 import {IOptions} from "tsparticles/dist/Interfaces/Options/IOptions";
 import {RecursivePartial} from "tsparticles/dist/Types/RecursivePartial";
-import {code} from "../../public/assets/code.png";
 
 
 const getFrameCode = (params: RecursivePartial<IOptions>) => {
@@ -80,7 +79,6 @@ export class FrameLayout extends React.Component<IProps, IState> {
                 style={{
                     background: this.props.backgroundColor
                 }}>
-                <img src={code} alt="code"/>
                 <div className="frame-layout__particles-container">
                     <ParticlesContainer id={this.props.id} params={this.props.params}></ParticlesContainer>
                 </div>
