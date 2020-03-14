@@ -19,7 +19,6 @@ const getFrameCode = (params: RecursivePartial<IOptions>) => {
 }
 
 interface IProps extends Partial<IDefaultProps> {
-    id?: string;
     name: string;
     backgroundColor: string;
     params: RecursivePartial<IOptions>;
@@ -80,7 +79,7 @@ export class FrameLayout extends React.Component<IProps, IState> {
                     background: this.props.backgroundColor
                 }}>
                 <div className="frame-layout__particles-container">
-                    <ParticlesContainer id={this.props.id} params={this.props.params}></ParticlesContainer>
+                    <ParticlesContainer params={this.props.params}></ParticlesContainer>
                 </div>
                 <div className="frame-layout__container">
                     <div className="frame-layout__content">

@@ -69,7 +69,6 @@ export class App extends React.Component<IProps, IState> {
                 <FrameContext.Consumer>
                     {({chosenFrame}) => 
                         <FrameLayout
-                            id="tsparticles"
                             backgroundColor={frames[chosenFrame].backgroundColor}
                             name={frames[chosenFrame].name}
                             params={frames[chosenFrame].params} />}
