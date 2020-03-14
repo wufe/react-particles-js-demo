@@ -1,13 +1,15 @@
 import * as React from 'react';
-import { default as Particles, IParticlesParams } from 'react-particles-js';
 import SyntaxHighlighter from 'react-syntax-highlighter/prism';
-import { base16AteliersulphurpoolLight as theme } from 'react-syntax-highlighter/styles/prism';
-import { FrameThumbsContainer } from './frame-thumbs-container';
-import { ParticlesContainer } from './particles-container';
-import { Subscription } from 'rxjs';
-import { onKeyPressed } from '../streams/key-pressed';
+import {base16AteliersulphurpoolLight as theme} from 'react-syntax-highlighter/styles/prism';
+import {FrameThumbsContainer} from './frame-thumbs-container';
+import {ParticlesContainer} from './particles-container';
+import {Subscription} from 'rxjs';
+import {onKeyPressed} from '../streams/key-pressed';
+import {IOptions} from "tsparticles/dist/Interfaces/Options/IOptions";
+import {RecursivePartial} from "tsparticles/dist/Types/RecursivePartial";
 
-const getFrameCode = (params: IParticlesParams) => {
+
+const getFrameCode = (params: RecursivePartial<IOptions>) => {
     const paramsCode = JSON.stringify(params, null, 4)
         .split('\n')
         .map((x, i) => i > 0 ? `\t${x}` : x)
@@ -19,7 +21,7 @@ const getFrameCode = (params: IParticlesParams) => {
 interface IProps extends Partial<IDefaultProps> {
     name: string;
     backgroundColor: string;
-    params: IParticlesParams;
+    params: RecursivePartial<IOptions>;
 }
 
 interface IDefaultProps {
@@ -98,7 +100,7 @@ export class FrameLayout extends React.Component<IProps, IState> {
                         </div>
                     </div>
                     <div className="frame-layout__thumbs">
-                        <FrameThumbsContainer />
+                        <FrameThumbsContainer/>
                     </div>
                 </div>
 
@@ -109,7 +111,7 @@ export class FrameLayout extends React.Component<IProps, IState> {
                         target="_blank"></a>
                     <span>v2.7.0</span>
                 </div>
-                
+
             </div>
         );
     }

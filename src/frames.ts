@@ -1,17 +1,21 @@
-import { IParticlesParams } from "react-particles-js";
 import react from "../public/assets/react.svg";
-import deer from "../public/assets/deer.svg";
-import deerskull from "../public/assets/deerskull.svg";
-import fox from "../public/assets/fox.svg";
-import wolf from "../public/assets/wolf.svg";
 import k8s from "../public/assets/k8s.svg";
 import code from "../public/assets/code.png";
 import smallDeer from "../public/assets/small-deer.svg";
+import {IOptions} from "tsparticles/dist/Interfaces/Options/IOptions";
+import {RecursivePartial} from "tsparticles/dist/Types/RecursivePartial";
+import {MoveDirection} from "tsparticles/dist/Enums/MoveDirection";
+import {OutMode} from "tsparticles/dist/Enums/OutMode";
+import {HoverMode} from "tsparticles/dist/Enums/Modes/HoverMode";
+import {ClickMode} from "tsparticles/dist/Enums/Modes/ClickMode";
+import {ShapeType} from "tsparticles/dist/Enums/ShapeType";
+import {PolygonMaskType} from "tsparticles/dist/Enums/PolygonMaskType";
+import {PolygonMaskInlineArrangement} from "tsparticles/dist/Enums/PolygonMaskInlineArrangement";
 
 export type TFrame = {
     backgroundColor: string;
     name: string;
-    params: IParticlesParams;
+    params: RecursivePartial<IOptions>;
     slug: string;
 };
 
@@ -32,7 +36,7 @@ export const frames: TFrame[] = [
                 events: {
                     onhover: {
                         enable: true,
-                        mode: 'repulse'
+                        mode: HoverMode.repulse
                     }
                 }
             }
@@ -64,19 +68,19 @@ export const frames: TFrame[] = [
                 move: {
                     random: true,
                     speed: 1,
-                    direction: 'top',
-                    out_mode: 'out'
+                    direction: MoveDirection.top,
+                    out_mode: OutMode.out
                 }
             },
             interactivity: {
                 events: {
                     onhover: {
                         enable: true,
-                        mode: 'bubble'
+                        mode: HoverMode.bubble
                     },
                     onclick: {
                         enable: true,
-                        mode: 'repulse'
+                        mode: ClickMode.repulse
                     },
                 },
                 modes: {
@@ -111,8 +115,8 @@ export const frames: TFrame[] = [
                     random: true
                 },
                 move: {
-                    direction: 'bottom',
-                    out_mode: 'out'
+                    direction: MoveDirection.bottom,
+                    out_mode: OutMode.out
                 },
                 line_linked: {
                     enable: false
@@ -122,7 +126,7 @@ export const frames: TFrame[] = [
                 events: {
                     onclick: {
                         enable: true,
-                        mode: 'remove'
+                        mode: ClickMode.remove
                     }
                 },
                 modes: {
@@ -151,7 +155,7 @@ export const frames: TFrame[] = [
                     opacity: .02
                 },
                 move: {
-                    direction: 'right',
+                    direction: MoveDirection.right,
                     speed: .05
                 },
                 size: {
@@ -169,7 +173,7 @@ export const frames: TFrame[] = [
                 events: {
                     onclick: {
                         enable: true,
-                        mode: 'push'
+                        mode: ClickMode.push
                     }
                 },
                 modes: {
@@ -199,11 +203,11 @@ export const frames: TFrame[] = [
                 },
                 move: {
                     speed: 1,
-                    out_mode: 'out'
+                    out_mode: OutMode.out
                 },
                 shape: {
-                    type: ['images', 'circle'],
-                    images: [
+                    type: [ShapeType.image, ShapeType.circle],
+                    image: [
                         {
                             src: react,
                             height: 20,
@@ -272,13 +276,13 @@ export const frames: TFrame[] = [
             polygon: {
                 enable: true,
                 scale: .5,
-                type: 'inline',
+                type: PolygonMaskType.inline,
                 move: {
                     radius: 10,
                 },
                 url: smallDeer,
                 inline: {
-                    arrangement: 'equidistant'
+                    arrangement: PolygonMaskInlineArrangement.equidistant
                 },
                 draw: {
                     enable: true,
@@ -292,7 +296,7 @@ export const frames: TFrame[] = [
                 events: {
                     onhover: {
                         enable: true,
-                        mode: 'bubble'
+                        mode: HoverMode.bubble
                     }
                 },
                 modes: {
