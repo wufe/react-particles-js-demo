@@ -18,8 +18,8 @@
   "dependencies": {
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-particles-js": "^2.7.0",
-    "tsparticles": "^1.10.1"
+    "react-particles-js": "^2.8.0",
+    "tsparticles": "^1.10.2"
   },
   "scripts": {
     "start": "parcel public/index.html",
