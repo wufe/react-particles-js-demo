@@ -19,7 +19,7 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-particles-js": "^2.7.1",
-    "tsparticles": "^1.11.2"
+    "tsparticles": "latest"
   },
   "scripts": {
     "start": "parcel public/index.html",
