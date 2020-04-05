@@ -18,7 +18,7 @@
   "dependencies": {
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-particles-js": "^2.7.1"
+    "react-particles-js": "^3.0.1"
   },
   "scripts": {
     "start": "parcel public/index.html",
