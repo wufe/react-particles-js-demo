@@ -5,11 +5,10 @@ import {FrameThumbsContainer} from './frame-thumbs-container';
 import {ParticlesContainer} from './particles-container';
 import {Subscription} from 'rxjs';
 import {onKeyPressed} from '../streams/key-pressed';
-import {IOptions} from "tsparticles/dist/Interfaces/Options/IOptions";
-import {RecursivePartial} from "tsparticles/dist/Types/RecursivePartial";
+import { IParticlesParams } from 'react-particles-js';
 
 
-const getFrameCode = (params: RecursivePartial<IOptions>) => {
+const getFrameCode = (params: IParticlesParams) => {
     const paramsCode = JSON.stringify(params, null, 4)
         .split('\n')
         .map((x, i) => i > 0 ? `\t${x}` : x)
@@ -21,7 +20,7 @@ const getFrameCode = (params: RecursivePartial<IOptions>) => {
 interface IProps extends Partial<IDefaultProps> {
     name: string;
     backgroundColor: string;
-    params: RecursivePartial<IOptions>;
+    params: IParticlesParams;
 }
 
 interface IDefaultProps {
@@ -109,7 +108,7 @@ export class FrameLayout extends React.Component<IProps, IState> {
                         className="github-mark"
                         href="https://github.com/Wufe/react-particles-js"
                         target="_blank"></a>
-                    <span>v2.8.0</span>
+                    <span>v3.0.1</span>
                 </div>
 
             </div>
