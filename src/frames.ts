@@ -2,20 +2,12 @@ import react from "../public/assets/react.svg";
 import k8s from "../public/assets/k8s.svg";
 import code from "../public/assets/code.png";
 import smallDeer from "../public/assets/small-deer.svg";
-import {IOptions} from "tsparticles/dist/Interfaces/Options/IOptions";
-import {RecursivePartial} from "tsparticles/dist/Types/RecursivePartial";
-import {MoveDirection} from "tsparticles/dist/Enums/MoveDirection";
-import {OutMode} from "tsparticles/dist/Enums/OutMode";
-import {HoverMode} from "tsparticles/dist/Enums/Modes/HoverMode";
-import {ClickMode} from "tsparticles/dist/Enums/Modes/ClickMode";
-import {ShapeType} from "tsparticles/dist/Enums/ShapeType";
-import {PolygonMaskType} from "tsparticles/dist/Enums/PolygonMaskType";
-import {PolygonMaskInlineArrangement} from "tsparticles/dist/Enums/PolygonMaskInlineArrangement";
+import { IParticlesParams, MoveDirection, OutMode, HoverMode, ClickMode, ShapeType, PolygonMaskType, PolygonMaskInlineArrangement } from "react-particles-js";
 
 export type TFrame = {
     backgroundColor: string;
     name: string;
-    params: RecursivePartial<IOptions>;
+    params: IParticlesParams;
     slug: string;
 };
 
