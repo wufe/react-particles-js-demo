@@ -253,7 +253,8 @@ export const frames: TFrame[] = [
                     opacity: .4
                 },
                 move: {
-                    speed: 1
+                    speed: 1,
+                    bounce: false
                 },
                 opacity: {
                     anim: {
