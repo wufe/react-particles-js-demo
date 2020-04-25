@@ -2,7 +2,7 @@ import react from "../public/assets/react.svg";
 import k8s from "../public/assets/k8s.svg";
 import code from "../public/assets/code.png";
 import smallDeer from "../public/assets/small-deer.svg";
-import { IParticlesParams, MoveDirection, OutMode, HoverMode, ClickMode, ShapeType, PolygonMaskType, PolygonMaskInlineArrangement } from "react-particles-js";
+import { IParticlesParams, MoveDirection, OutMode, HoverMode, ClickMode, ShapeType, PolygonMaskType, PolygonMaskInlineArrangement } from 'react-particles-js';
 
 export type TFrame = {
     backgroundColor: string;
