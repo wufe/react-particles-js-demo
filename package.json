@@ -13,12 +13,13 @@
     "parcel": "^1.10.3",
     "react-syntax-highlighter": "^8.0.1",
     "rxjs": "^6.2.2",
+    "tsparticles": "^1.13.6",
     "typescript": "^3.8.3"
   },
   "dependencies": {
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-particles-js": "3.2.0"
+    "react-particles-js": "3.2.1"
   },
   "scripts": {
     "start": "parcel serve public/index.html --open",
