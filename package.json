@@ -19,10 +19,10 @@
   "dependencies": {
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-particles-js": "3.2.1"
+    "react-particles-js": "3.3.0-beta.1"
   },
   "scripts": {
-    "start": "parcel serve public/index.html --open",
+    "demo": "parcel serve public/index.html --no-cache --open",
     "demo:build:production": "parcel build -t browser -d dist public/index.html --no-source-maps",
     "deploy": "pwsh ./scripts/deploy.ps1"
   }
