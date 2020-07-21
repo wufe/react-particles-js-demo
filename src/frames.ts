@@ -242,6 +242,9 @@ export const frames: TFrame[] = [
         params: {
             fps_limit: 28,
             particles: {
+                collisions: {
+                    enable: false
+                },
                 number: {
                     value: 200,
                     density: {
