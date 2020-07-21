@@ -2,7 +2,8 @@ import react from "../public/assets/react.svg";
 import k8s from "../public/assets/k8s.svg";
 import code from "../public/assets/code.png";
 import smallDeer from "../public/assets/small-deer.svg";
-import { IParticlesParams, MoveDirection, OutMode, HoverMode, ClickMode, ShapeType, PolygonMaskType, PolygonMaskInlineArrangement } from 'react-particles-js';
+import { IParticlesParams, MoveDirection, OutMode, HoverMode, ClickMode, ShapeType } from 'react-particles-js';
+import { Type, InlineArrangement } from "tsparticles/dist/Plugins/PolygonMask/Enums";
 
 export type TFrame = {
     backgroundColor: string;
@@ -259,7 +260,7 @@ export const frames: TFrame[] = [
                     anim: {
                         enable: true,
                         opacity_min: .05,
-                        speed: 2,
+                        speed: 1,
                         sync: false,
                     },
                     value: .4
@@ -268,13 +269,13 @@ export const frames: TFrame[] = [
             polygon: {
                 enable: true,
                 scale: .5,
-                type: PolygonMaskType.inline,
+                type: Type.inline,
                 move: {
                     radius: 10,
                 },
                 url: smallDeer,
                 inline: {
-                    arrangement: PolygonMaskInlineArrangement.equidistant
+                    arrangement: InlineArrangement.equidistant,
                 },
                 draw: {
                     enable: true,

@@ -19,7 +19,7 @@
   "dependencies": {
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-particles-js": "3.3.0-beta.1"
+    "react-particles-js": "3.3.0-beta.2"
   },
   "scripts": {
     "demo": "parcel serve public/index.html --no-cache --open",
