@@ -14,9 +14,7 @@ export class ParticlesContainer extends React.PureComponent<IProps> {
         super(props);
     }
 
-    componentDidMount() {
-        console.log('Particles ref:', this.ref);
-    }
+    componentDidMount() {}
 
     render() {
         return <Particles particlesRef={this.ref} params={this.props.params} className="frame-layout__particles"/>

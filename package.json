@@ -14,13 +14,13 @@
     "react-syntax-highlighter": "^8.0.1",
     "rxjs": "^6.2.2",
     "sass": "^1.35.1",
-    "tsparticles": "^1.13.6",
+    "tsparticles": "^1.29.2",
     "typescript": "^3.8.3"
   },
   "dependencies": {
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-particles-js": "3.5.0-beta1"
+    "react-particles-js": "3.5.0-beta2"
   },
   "scripts": {
     "demo": "parcel serve public/index.html --no-cache --open",
